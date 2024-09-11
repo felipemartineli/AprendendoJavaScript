@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Conversor R$ -> US$</h1>
+        
+        <button onclick="conv()">Converter</button>
+
+        <p id="dolar"></p>
+
+        <script>
+                var US;
+                US = Number(prompt("Quanto está a cotação do dólar agora?"));
+                
+                function conv()
+                {
+                    var RS, R;
+
+                    RS =  Number(prompt("Quantos R$ você tem na carteira?"));
+
+                    R = RS / US;
+
+                    document.getElementById("dolar").innerHTML = `convertendo ${RS} irá dar ${R}US$`;
+
+
+
+                }
+
+
+        </script>
+
+    
+</body>
+</html>
