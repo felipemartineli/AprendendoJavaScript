@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculando Troco</h1>
+    <button onclick="numeros()">Comprar produto</button>
+    <script>
+            function numeros()
+            {
+               var VP, din, sub, NP ;
+
+
+               NP = prompt("DIgite o nome do produto escolhido para compra: ");
+                
+               VP = Number(prompt("Digite o valor do " + NP +":" ));
+
+               din = Number(prompt("Qual foi o valor que você deu para comprar o " + NP + "?:"));
+
+               sub = din - VP;
+
+               alert(" Você comprou "+ NP +" que custou "+ VP +". Deu "+ din +" em dinheiro e vai receber "+ sub +" de troco. Volte sempre!" );
+               
+            }
+
+    </script>
+    
+</body>
+</html>

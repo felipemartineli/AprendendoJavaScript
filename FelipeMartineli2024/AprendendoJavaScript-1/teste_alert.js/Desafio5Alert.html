@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conversor de Medidas</h1>
+    <button onclick="medidas()">Converter</button>
+    <p id="valormetro"></p>
+    <p id="valores"></p>
+    <p>Clique no botão acima para iniciar.</p>
+
+    <script>
+        function medidas()
+        {
+            var dt, Km, Hm, Dam, dm, cm, mm;
+
+            dt = Number(prompt("Digite uma distância em metros (M)"))
+
+            Km = dt / 1000;
+            Hm = dt / 100;
+            Dam = dt / 10;
+            dm = dt * 10;
+            cm = dt * 100;
+            mm = dt * 1000;
+
+
+            document.getElementById("valormetro").innerHTML = `O valor em metro corresponde a ${dt}...`;
+            document.getElementById("valores").innerHTML = `
+            ${Km}<br>
+            ${Hm}<br>
+            ${Dam}<br>
+            ${dm}<br>
+            ${cm}<br>
+            ${mm}<br>`;
+
+        }
+         
+    </script>
+</body>
+</html>

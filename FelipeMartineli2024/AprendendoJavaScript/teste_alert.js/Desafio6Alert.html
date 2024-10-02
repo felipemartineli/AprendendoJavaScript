@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conversor de Temperaturas</h1>
+    
+    <button onclick="Temperatura()">Converter</button>
+   
+    
+    <p>Clique no botão acima para iniciar.</p> 
+
+    <p id="Celsius"></p>
+    <p id="Temp"></p>
+
+    <script>
+            function Temperatura()
+            {
+                var C, Kel, Fahr;
+
+                 C = Number(prompt("Digite uma temperatura em °C(Celsius)"));
+
+                 Kel = 273 + C;
+
+                 Fahr = (C * 1.8) + 32;
+
+                document.getElementById("Celsius").innerHTML = `A temperatura de ${C}, corresponde a... `;
+                document.getElementById("Temp").innerHTML = ` 
+                ${Kel}<br>
+                ${Fahr}<br>`;
+
+            }
+    </script>
+    
+</body>
+</html>
